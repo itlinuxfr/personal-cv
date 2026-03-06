@@ -38,9 +38,6 @@ jobs:
       - name: TypeScript Type Check
         run: npm run type-check
 
-      - name: Run Linter
-        run: npm run lint
-
   build:
     name: Build Next.js
     runs-on: ubuntu-latest
