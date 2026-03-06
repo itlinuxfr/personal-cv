@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/personal-cv",
   images: {
     unoptimized: true, // Required for next/image on static exports
   },
