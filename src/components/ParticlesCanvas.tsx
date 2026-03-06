@@ -28,7 +28,8 @@ export default function ParticlesCanvas() {
     /* Grid spacing */
     let spacingX = 0, spacingY = 0;
 
-    const COUNT = 800;
+    /* Dynamic count based on device width to save battery/performance on mobile */
+    const COUNT = window.innerWidth < 768 ? 150 : 800;
     const homeX  = new Float32Array(COUNT);
     const homeY  = new Float32Array(COUNT);
     const x      = new Float32Array(COUNT);
